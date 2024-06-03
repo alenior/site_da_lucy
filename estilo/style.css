@@ -11,7 +11,7 @@
 
 :root {
 
-    --amarelo_lucy: #ebd977;
+    --amarelo_lucy: #d8bedf;
     --roxo_lucy: #a94ff3;
 
     --fonte_padrao: 'Poetsen One', sans-serif;
@@ -31,14 +31,38 @@ header {
     display: flex;
 }
 
-header > h1 {
+header > div > div > h1 {
+    color: yellow;
+    text-decoration: solid;
     text-align: center;
+    margin-top: 10px;
+}
+
+header > div > div > p {
+    color: white;
+    font-size: 20px;
+    text-decoration: solid;
 }
 
 div#logo {
-    flex-basis: 15%;
+    flex-basis: 25%;
 }
 
 div#texto {
-    flex-basis: 85%;
+    flex-basis: 50%;
+    display: grid;
+}
+
+div#pesquisa {
+    flex-basis: 25%;
+}
+
+#busca {
+    border-radius: 10px;
+    text-align: center;
+    display: table-cell;
+}
+
+#lupa {
+    margin-top: 40px;
 }
