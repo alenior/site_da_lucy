@@ -11,7 +11,9 @@
 
 :root {
 
-    --amarelo_lucy: #d8bedf;
+    --amarelo_lucy: #FFDF2B;
+    --amarelo_lucy_alterado: #eedb6f;
+    --roxo_lucy_alterado: #d8bedf;
     --roxo_lucy: #a94ff3;
 
     --fonte_padrao: 'Poetsen One', sans-serif;
@@ -23,7 +25,7 @@
 }
 
 header {
-    background-color: var(--amarelo_lucy);
+    background-color: var(--roxo_lucy_alterado);
     font-family: var(--fonte_padrao);
     text-align: center;
     border-radius: 5px;
@@ -65,4 +67,12 @@ div#pesquisa {
 
 #lupa {
     margin-top: 40px;
+}
+
+body {
+    background-color: var(--amarelo_lucy_alterado);
+}
+
+footer {
+    background-color: white;
 }
