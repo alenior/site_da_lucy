@@ -16,7 +16,7 @@
     --roxo_lucy_alterado: #d8bedf;
     --roxo_lucy: #a94ff3;
 
-    --fonte_padrao: 'Poetsen One', sans-serif;
+    --fonte_padrao: 'Poetsen One', Arial, sans-serif;
 
 }
 
@@ -77,24 +77,20 @@ body {
 .slideshow {
     padding: 10px;
     position: relative;
-    width: 100%;
-    height: 100%;
-    margin: auto;
 }
 
 .slides {
     display: none;
-    position: absolute;
     width: auto;
     text-align: center;
 }
 
 .slides img {
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 80%;
 }
 
-.produtos {
+.categorias {
     
 }
 
