@@ -71,7 +71,7 @@ div#pesquisa {
 
 body {
     background-color: var(--amarelo_lucy_alterado);
-    display: flexbox;
+    display: flexbox;    
 }
 
 .slideshow {
@@ -90,8 +90,41 @@ body {
     height: 80%;
 }
 
+#titulo_categorias {
+    text-align: center;
+    text-decoration: solid;
+    font-size: larger;
+    padding: 15px;
+}
+
 .categorias {
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    margin: 0;
+}
+
+.tipos_categorias {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.item {
+    background-color: white;
+    border: 1px solid gray;
+    padding: 10px;
+    box-shadow: 0 2px 4px black;
+}
+
+.item > a:hover {
     
+}
+
+.iem img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 footer {
