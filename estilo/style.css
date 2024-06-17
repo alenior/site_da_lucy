@@ -24,6 +24,10 @@
     margin: 0;
 }
 
+html {
+    height: 100%;
+}
+
 header {
     background-color: var(--roxo_lucy_alterado);
     font-family: var(--fonte_padrao);
@@ -71,7 +75,14 @@ div#pesquisa {
 
 body {
     background-color: var(--amarelo_lucy_alterado);
-    display: flexbox;    
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    height: 100%;
+}
+
+main {
+    flex: 1;
 }
 
 .slideshow {
@@ -100,7 +111,7 @@ body {
 .categorias {
     justify-content: center;
     align-items: center;
-    height: 50vh;
+    height: auto;
     margin: 0;
 }
 
@@ -108,17 +119,18 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
+    height: auto;
+    width: 810px;
 }
 
 .item {
-    background-color: white;
+    background-color: rgb(229, 182, 229);
     border: 1px solid gray;
-    padding: 10px;
+    padding: 20px;
     box-shadow: 0 2px 4px black;
-}
-
-.item > a:hover {
-    
+    text-align: center;
+    height: 130px;
+    width: 130px;
 }
 
 .iem img {
