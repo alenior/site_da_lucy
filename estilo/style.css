@@ -116,6 +116,7 @@ main {
 }
 
 .tipos_categorias {
+    background-color: white;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     gap: 10px;
@@ -124,10 +125,7 @@ main {
 }
 
 .item {
-    background-color: rgb(229, 182, 229);
-    border: 1px solid gray;
     padding: 20px;
-    box-shadow: 0 2px 4px black;
     text-align: center;
     height: 130px;
     width: 130px;
