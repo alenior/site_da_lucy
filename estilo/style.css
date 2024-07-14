@@ -104,7 +104,7 @@ main {
 #titulo_categorias {
     text-align: center;
     text-decoration: solid;
-    font-size: larger;
+    font-size: 2em;
     padding: 15px;
 }
 
@@ -127,7 +127,7 @@ main {
 .item {
     padding: 20px;
     text-align: center;
-    height: 130px;
+    height: auto;
     width: auto;
 }
 
@@ -135,10 +135,37 @@ main {
     box-shadow: 2px 2px 2px var(--roxo_lucy)
 }
 
-.iem img {
+.item img {
     max-width: 100%;
     height: auto;
-    display: block;
+    display: center;
+}
+
+#ofertas_parceiros {
+    text-align: center;
+    text-decoration: solid;
+    font-size: 2em;
+    padding: 15px;
+}
+
+#parceiros {
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    height: auto;
+    width: auto;
+}
+
+.parceiro {
+    padding: 20px;
+    text-align: center;
+    height: auto;
+    width: auto;
+}
+
+.parceiro img {
+    border-radius: 25%;
 }
 
 footer {
