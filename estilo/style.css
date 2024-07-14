@@ -128,7 +128,7 @@ main {
     padding: 20px;
     text-align: center;
     height: 130px;
-    width: 130px;
+    width: auto;
 }
 
 .item:hover {
