@@ -74,7 +74,6 @@ div#pesquisa {
 }
 
 body {
-    background-color: var(--amarelo_lucy_alterado);
     display: flex;
     flex-direction: column;
     min-height: 100vh;
