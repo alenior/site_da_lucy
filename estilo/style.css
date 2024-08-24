@@ -3,10 +3,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 @font-face {
-  font-family: "Poetsen One", sans-serif;
-  src: url('Fontes/Poetsen_One/PoetsenOne-Regular.ttf') format('opentype');
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Poetsen One", sans-serif;
+    src: url('Fontes/Poetsen_One/PoetsenOne-Regular.ttf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@media (max-width: 600px) {
+
+    .tipos_categorias,
+    #parceiros {
+        grid-template-columns: 1fr;
+    }
 }
 
 :root {
@@ -22,6 +30,8 @@
 
 * {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 html {
@@ -30,21 +40,26 @@ html {
 
 header {
     background-color: var(--roxo_lucy_alterado);
+    color:var(--amarelo_lucy);
     font-family: var(--fonte_padrao);
     text-align: center;
+    font-size: 35px;
     border-radius: 5px;
     box-shadow: 0px 5px 5px #423d3d7a;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
 }
 
-header > div > div > h1 {
+header>div>div>h1 {
     color: yellow;
     text-decoration: solid;
     text-align: center;
     margin-top: 10px;
 }
 
-header > div > div > p {
+header>div>div>p {
     color: white;
     font-size: 20px;
     text-decoration: solid;
@@ -115,11 +130,14 @@ main {
 }
 
 .tipos_categorias {
-    background-color: white;
+    background-color: var(--roxo_lucy);
+    border-radius: 8px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.521);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
     height: auto;
+    margin: 25px;
     width: auto;
 }
 
@@ -148,11 +166,14 @@ main {
 }
 
 #parceiros {
-    background-color: white;
+    background-color: var(--amarelo_lucy);
+    border-radius: 8px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.493);
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
     height: auto;
+    margin: 25px;
     width: auto;
 }
 
@@ -167,6 +188,13 @@ main {
     border-radius: 25%;
 }
 
+.parceiro img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
 footer {
-    background-color: white;
+    background-color: var(--roxo_lucy);
+    color: var(--amarelo_lucy);
+    text-align: center;
 }
