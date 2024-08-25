@@ -24,9 +24,15 @@
             <h1>Promos Marias</h1>
         </section>
         <div id="pesquisa">
-            <input type="text" id="busca" placeholder="Pesquisar..." aria-label="Campo de pesquisa">
-            <label for="busca" aria-label="Botão de pesquisa"><img src="imagens/lupa_icon_min_roxo.png"
-                    alt="Pesquise no site." id="lupa"></label>
+            <form action="https://www.magazinevoce.com.br/magazinesennalucy/busca/" method="GET"
+                id="formulario_de_busca">
+                <input type="text" id="termo_da_busca" placeholder="O que você procura?" aria-label="Campo de pesquisa"
+                    required>
+                <button type="submit" id="botao_de_pesquisa">
+                    <label for="busca" aria-label="Botão de pesquisa"><img src="imagens/lupa_icon_min_roxo.png"
+                            alt="Pesquise no site." id="lupa"></label>
+                </button>
+            </form>
 
         </div>
     </header>
@@ -92,7 +98,7 @@
             <div class="parceiro"><a href="https://tidd.ly/3WypK8P" target="_blank" rel="noopener"><img
                         src="imagens/logo_avon.png" alt="Logo Avon"></a><br>Avon</div>
             <div class="parceiro"><a href="https://tidd.ly/3WypHd9" target="_blank" rel="noopener"><img
-                        src="imagens/logo_boticario.png" alt="Logo C&A"></a><br>Boticário</div>
+                        src="imagens/logo_boticario.png" alt="Logo C&A"></a><br>O Boticário</div>
         </div>
 
     </main>
@@ -100,8 +106,8 @@
     <footer>
         <div>
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-            <a href="https://wa.me/5585997716371?text=Vim%20do%20site." id="whatsapp"
-                target="_blank" rel="noopener" aria-label="Converse conosco no WhatsApp">
+            <a href="https://wa.me/5585997716371?text=Vim%20do%20site." id="whatsapp" target="_blank" rel="noopener"
+                aria-label="Converse conosco no WhatsApp">
                 <i class="fa fa-whatsapp"></i>
             </a>
             <p>Desenvolvido por Alencar Júnior</p>
@@ -122,6 +128,13 @@
             slides[slideIndex - 1].style.display = "block";
             setTimeout(showSlides, 2500);
         }
+
+        document.getElementById('formulario_de_busca').addEventListener('submit', function (event) {
+            event.preventDefault();  // Impede o envio do formulário padrão
+            const term = document.getElementById('termo_da_busca').value;
+            const searchUrl = `https://www.magazinevoce.com.br/magazinesennalucy/busca/${encodeURIComponent(term)}/?from=submit`;
+            window.location.href = searchUrl;
+        });
     </script>
 </body>
 

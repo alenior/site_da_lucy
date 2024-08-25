@@ -75,8 +75,13 @@ header {
     text-align: center;
 }
 
+#botao_de_pesquisa {
+    background-color:transparent;
+    border: none;
+    cursor: pointer;
+}
+
 #lupa {
-    margin-left: 10px;
     cursor: pointer;
 }
 
